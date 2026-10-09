@@ -347,7 +347,7 @@ figcaption { margin-top: 0.6rem; color: var(--graphite); font-size: 0.9rem; line
 }
 
 /* ---------- Project page photos ---------- */
-.hero-shot img { width: 100%; height: auto; aspect-ratio: 8 / 3; object-fit: cover; }
+.hero-shot img { width: 80%; height: auto; aspect-ratio: 6 / 3; object-fit: cover; }
 .p-section figure { max-width: 560px; }
 .p-section figure img { width: 100%; height: auto; }
 .gallery figure img { aspect-ratio: 4 / 3; object-fit: cover; }
