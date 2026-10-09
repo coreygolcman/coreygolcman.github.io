@@ -40,7 +40,7 @@
     <dl class="spec"><dt>Role</dt><dd>Automation Engineering Co-op (part time)</dd><dt>Company</dt><dd>Accelerated Solutions Group</dd><dt>Timeline</dt><dd>May 2026 to Present</dd><dt>Tools & Skills</dt><dd>Industrial Vision, Anomalib AI, NVIDIA Edge Hardware, Python, Fusion 360, Pneumatics</dd><dt>Status</dt><dd>In Progress</dd></dl>
     <figure class="hero-shot">
       <!-- Replace this placeholder with your best image of the finished work. -->
-      <img src="../images/Robot_And_QC_Station.png" width="2100" height="900" alt="Completed QC station with camera, lighting, and robotic arm">
+      <img src="../images/Robot_And_QC_Station.png" width="1600" height="1200" alt="Completed QC station with camera, lighting, and robotic arm">
       <figcaption>Completed QC station with camera, lighting and robotic arm</figcaption>
     </figure>
   </div>
@@ -61,11 +61,11 @@
         <h2>Approach</h2>
         <h3>Vision inspection</h3><p>A Basler camera with dark-field, grazing-angle lighting makes edge rounding and embossed-lettering defects on the formed ABS sheets visible.</p><figure>
           <!-- Replace this placeholder with: <img src="../images/YOUR-PROJECT/FILE.jpg" alt="Describe the image" width="1600" height="900" loading="lazy"> -->
-          <img src="../images/QC_Station_Inside.jpg" width="2100" height="900" alt="Completed QC station with camera, lighting and shroud">
+          <img src="../images/QC_Station_Inside.jpg" width="1600" height="1200" alt="Completed QC station with camera, lighting and shroud">
           <figcaption>[Caption: camera, lighting angle, and part position.]</figcaption>
         </figure><h3>Defect detection model</h3><p>An EfficientAD anomaly-detection model, trained with Anomalib, classifies each sheet as good or bad. It runs on an NVIDIA Jetson Orin AGX, where I set up the CUDA and Python environment for real-time inference at the edge.</p><p class="todo">[Add training data size, how you collected defect examples, and how you validated the model.]</p><h3>Electrical integration</h3><p>Relay-based circuits convert the Jetson's digital I/O to industrial I/O, and a voltage divider steps a 24 V industrial signal down to a level the Jetson can read. The station and the robotic arm coordinate through an automated handshake.</p><h3>Fixturing and gripper</h3><p>Parts are located using 3-2-1 principles and held with compliant clamping. A custom end-of-arm vacuum gripper separates one sheet at a time from a stack, and the robotic arm sorts each into a good or bad pile.</p><figure>
           <!-- Replace this placeholder with: <img src="../images/YOUR-PROJECT/FILE.jpg" alt="Describe the image" width="1600" height="900" loading="lazy"> -->
-          <img src="../images/Vacuum_Gripper.jpg" width="2100" height="900" alt="Vacuum Gripper">
+          <img src="../images/Vacuum_Gripper.jpg" width="1600" height="1200" alt="Vacuum Gripper">
           <figcaption>Vacuum Gripper</figcaption>
         </figure>
       </section>
