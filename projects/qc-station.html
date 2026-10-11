@@ -54,16 +54,16 @@
   <article>
       <section class="p-section" id="problem">
         <h2>Problem</h2>
-        <p class="todo">[Why did formed ABS sheets need automated inspection? What did manual inspection miss or cost?]</p>
+        <p class="todo">One of ASG's most popular accessories are there car badges which are using ABS sheets that are molded into shape by a thermoformer. The company wanted to automate the process of picking and placing sheets in and out of thermoformer but the most difficult part to automate is inspecting its quality before its sent to cut. This is where I come in.</p>
       </section>
 
       <section class="p-section" id="approach">
-        <h2>Approach</h2>
-        <h3>Vision inspection</h3><p>A Basler camera with dark-field, grazing-angle lighting makes edge rounding and embossed-lettering defects on the formed ABS sheets visible.</p><figure>
+        <h2>Solution</h2>
+        <h3>Vision inspection</h3><p>I made a custom aluminum frame that has a Basler camera with diffuse light panels. This specific lighting rig makes edge rounding and embossed-lettering defects on the formed ABS sheets visible. The black shroud rejects ambient light for consistency</p><figure>
           <!-- Replace this placeholder with: <img src="../images/YOUR-PROJECT/FILE.jpg" alt="Describe the image" width="1600" height="900" loading="lazy"> -->
           <img src="../images/QC_Station_Inside.jpg" width="1600" height="1200" alt="Completed QC station with camera, lighting and shroud">
-          <figcaption>[Caption: camera, lighting angle, and part position.]</figcaption>
-        </figure><h3>Defect detection model</h3><p>An EfficientAD anomaly-detection model, trained with Anomalib, classifies each sheet as good or bad. It runs on an NVIDIA Jetson Orin AGX, where I set up the CUDA and Python environment for real-time inference at the edge.</p><p class="todo">[Add training data size, how you collected defect examples, and how you validated the model.]</p><h3>Electrical integration</h3><p>Relay-based circuits convert the Jetson's digital I/O to industrial I/O, and a voltage divider steps a 24 V industrial signal down to a level the Jetson can read. The station and the robotic arm coordinate through an automated handshake.</p><h3>Fixturing and gripper</h3><p>Parts are located using 3-2-1 principles and held with compliant clamping. A custom end-of-arm vacuum gripper separates one sheet at a time from a stack, and the robotic arm sorts each into a good or bad pile.</p><figure>
+          <figcaption>Camera, Lens, light panels, aluminum frame and black shroud</figcaption>
+        </figure><h3>Defect detection model</h3><p>An EfficientAD anomaly-detection model, trained with Anomalib, classifies each sheet as good or bad. It runs on an NVIDIA Jetson Orin AGX, where I set up the CUDA and Python environment for real-time inference at the edge.</p><p class="todo">[Add training data size, how you collected defect examples, and how you validated the model.]</p><h3>Electrical integration</h3><p>Relay-based circuits convert the Jetson's digital I/O to industrial I/O, and a voltage divider steps a 24 V industrial signal down to a level the Jetson can read. This allows the station and the robot to communicate.</p><h3>Fixturing and gripper</h3><p>A custom end-of-arm vacuum gripper to grab one sheet at a time from a stack, and the robotic arm sorts each into a good or bad pile.</p><figure>
           <!-- Replace this placeholder with: <img src="../images/YOUR-PROJECT/FILE.jpg" alt="Describe the image" width="1600" height="900" loading="lazy"> -->
           <img src="../images/Vacuum_Gripper.jpg" width="1600" height="1200" alt="Vacuum Gripper">
           <figcaption>Vacuum Gripper</figcaption>
@@ -77,7 +77,7 @@
 
       <section class="p-section" id="reflection">
         <h2>Reflection</h2>
-        <p class="todo">[What would you change next time? What did this teach you?]</p>
+        <p class="todo">As I continue working for ASG, I will be implementing several improvements including industrial lighting, a motorized curtain to open and close the shroud and will make production quality imporovements to the vacuum gripper</p>
       </section>
 
       <section class="p-section" id="gallery">
