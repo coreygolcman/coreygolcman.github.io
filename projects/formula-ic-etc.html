@@ -34,11 +34,11 @@
     <nav class="crumbs" aria-label="Breadcrumb"><a href="../projects.html">Projects</a> / <span>Electronic throttle control for Formula SAE</span></nav>
     <h1>Electronic throttle control for Formula SAE</h1>
     <p class="lede">The electronic throttle control system for the Formula IC car: ECU logic, pedal position sensing, throttle body actuation, and safety circuitry.</p>
-    <dl class="spec"><dt>Role</dt><dd>System lead, Electronic Throttle Control</dd><dt>Team</dt><dd>Formula IC, the university's Formula SAE team</dd><dt>Timeline</dt><dd>[Month Year] to Present</dd><dt>Tools</dt><dd>[ECU platform, programming language, schematic and CAD tools]</dd><dt>Status</dt><dd>[In progress or completed]</dd></dl>
+    <dl class="spec"><dt>Role</dt><dd>System lead, Electronic Throttle Control</dd><dt>Team</dt><dd>Texas A&M Formula IC</dd><dt>Timeline</dt><dd>April 2026 to Present</dd><dt>Tools</dt><dd>SolidWorks, KiCAD, Bench tester, Waterjet</dd><dt>Status</dt><dd>In Progress</dd></dl>
     <figure class="hero-shot">
       <!-- Replace this placeholder with your best image of the finished work. -->
       <div class="fig-ph" style="aspect-ratio:21/9"><span>Hero image: add images/formula-ic-etc/hero.jpg</span></div>
-      <figcaption>[Caption: what the image shows and why it matters.]</figcaption>
+      <figcaption>Electronic Throttle Control System Diagram</figcaption>
     </figure>
   </div>
 </section>
@@ -46,31 +46,21 @@
 <div class="wrap layout">
   <nav class="toc" aria-label="On this page">
     <p class="toc-title">On this page</p>
-    <ul><li><a href="#problem">Problem</a></li><li><a href="#approach">Approach</a></li><li><a href="#results">Results</a></li><li><a href="#reflection">Reflection</a></li><li><a href="#gallery">Gallery</a></li></ul>
+    <ul><li><a href="#problem">Problem</a></li><li><a href="#approach">Approach</a></li><li><a href="#gallery">Gallery</a></li></ul>
   </nav>
   <article>
       <section class="p-section" id="problem">
         <h2>Problem</h2>
-        <p class="todo">[What did the car need from its throttle system this season? Mention rules, reliability, and driver feel.]</p>
+        <p class="todo">As a team we decided to transition from mechanical throttle control to electronic throttle control, this a system that the team has never implemented before. It comes with many rules restrictions and is technically challenging but this system will be a big step in making a competitive racecar</p>
       </section>
 
       <section class="p-section" id="approach">
         <h2>Approach</h2>
-        <h3>ECU logic</h3><p>The ECU turns the driver's pedal input into a throttle command.</p><p class="todo">[Describe the control logic: pedal-to-throttle mapping, fault handling, and the tools you used.]</p><h3>Accelerator pedal position sensing</h3><p>Pedal position sensing gives the ECU a reliable measure of what the driver is asking for.</p><p class="todo">[Sensor type, redundancy, calibration, and how you check the signals agree.]</p><h3>Throttle body actuation</h3><p>The throttle body is driven by the ECU to follow the commanded position.</p><p class="todo">[Actuator, control loop, and response you achieved.]</p><figure>
+        <h3>ECU logic</h3><p>The ECU turns the driver's pedal input into a throttle command.</p><p class="todo">We are able to program different transfer functions from linear to logarithmic to change the response of the pedal</p><h3>Custom electronic accelerator pedal</h3><p>I designed a custom accelerator pedal that is integrated with an APPS sensor, it is extremely compact and lightweight at just 0.7 lb and it features an APPS sensor that senses the rotational position of the pedal to communicate with the ECU</p><p class="todo">PST-360 dual APPS Sensor</p><h3>Electronic Throttle Body</h3><p>I selected the ETB from the Honda NC750x motorcycle, out of 12 different throttle bodies, this specific throttle body has an optimized weight, proper H-bridge integration and is rules legal out of the box</p><p class="todo">[Actuator, control loop, and response you achieved.]</p><figure>
           <!-- Replace this placeholder with: <img src="../images/YOUR-PROJECT/FILE.jpg" alt="Describe the image" width="1600" height="900" loading="lazy"> -->
           <div class="fig-ph" style="aspect-ratio:16/9"><span>Schematic or system diagram</span></div>
-          <figcaption>[Caption: signal flow from pedal to throttle.]</figcaption>
-        </figure><h3>Safety circuitry</h3><p>The safety circuitry includes a Brake System Plausibility Device (BSPD), a first for the team.</p><p class="todo">[How the BSPD works, what it protects against, and how you tested it.]</p>
-      </section>
-
-      <section class="p-section" id="results">
-        <h2>Results</h2>
-        <p class="todo">[Test results, competition outcome, or inspection results.]</p>
-      </section>
-
-      <section class="p-section" id="reflection">
-        <h2>Reflection</h2>
-        <p class="todo">[What would you change next time? What did leading the system teach you?]</p>
+          <figcaption>NC750x ETB</figcaption>
+        </figure><h3>Safety circuitry</h3><p>The safety circuitry consists of the brake and throttle sensors and the Brake System Plausability Device (BSPD). The BSPD is a custom PCB that validates the states of the sensors to ensure that the racecar does not damage itself or the driver. An image of it can be seen down below.</p><p class="todo">[How the BSPD works, what it protects against, and how you tested it.]</p>
       </section>
 
       <section class="p-section" id="gallery">
@@ -78,15 +68,15 @@
         <div class="gallery"><figure>
           <!-- Replace this placeholder with: <img src="../images/YOUR-PROJECT/FILE.jpg" alt="Describe the image" width="1600" height="900" loading="lazy"> -->
           <div class="fig-ph" style="aspect-ratio:4/3"><span>Photo 1</span></div>
-          <figcaption>[Caption.]</figcaption>
+          <figcaption>BSPD_Schematic</figcaption>
         </figure><figure>
           <!-- Replace this placeholder with: <img src="../images/YOUR-PROJECT/FILE.jpg" alt="Describe the image" width="1600" height="900" loading="lazy"> -->
           <div class="fig-ph" style="aspect-ratio:4/3"><span>Photo 2</span></div>
-          <figcaption>[Caption.]</figcaption>
+          <figcaption>Accelerator Pedal FEA</figcaption>
         </figure><figure>
           <!-- Replace this placeholder with: <img src="../images/YOUR-PROJECT/FILE.jpg" alt="Describe the image" width="1600" height="900" loading="lazy"> -->
           <div class="fig-ph" style="aspect-ratio:4/3"><span>Photo 3</span></div>
-          <figcaption>[Caption.]</figcaption>
+          <figcaption>Accelerator Pedal Mapping</figcaption>
         </figure></div>
       </section>
 
@@ -99,10 +89,10 @@
   <div class="wrap footer-grid">
     <div>
       <h2>Contact</h2>
-      <p>Open to [internships or full-time roles] starting [Month Year]. Email is the fastest way to reach me.</p>
+      <p>Open to full time roles starting May 2027. Email is the fastest way to reach me.</p>
       <ul class="footer-links">
-        <li><a href="mailto:you@yourdomain.com">you@yourdomain.com</a></li>
-        <li><a href="https://www.linkedin.com/in/your-handle">LinkedIn</a></li>
+        <li><a href="coreygolcman@gmail.com">coreygolcman@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/coreygolcman">LinkedIn</a></li>
         <li><a href="https://github.com/your-handle">GitHub</a></li>
         <li><a href="../resume.pdf">Resume (PDF)</a></li>
       </ul>
